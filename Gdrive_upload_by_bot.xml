@@ -443,12 +443,7 @@
               </xs:schema>
               <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
                 <DocumentElement>
-                  <Para25Table010923.052508 diffgr:id="Para25Table010923.0525081" msdata:rowOrder="0" diffgr:hasChanges="inserted">
-                    <ColumnNameOne>mimeType</ColumnNameOne>
-                    <Operator>=</Operator>
-                    <ColumnNameTwo>application/vnd.google-apps.folder</ColumnNameTwo>
-                  </Para25Table010923.052508>
-                  <Para25Table010923.052508 diffgr:id="Para25Table010923.0525082" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                  <Para25Table010923.052508 diffgr:id="Para25Table010923.0525082" msdata:rowOrder="0" diffgr:hasChanges="inserted">
                     <ColumnNameOne>name</ColumnNameOne>
                     <Operator>=</Operator>
                     <ColumnNameTwo>[vName]</ColumnNameTwo>
