@@ -160,7 +160,7 @@
         <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="a7a36030-445b-4b12-a82d-138f5aa98668" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="24" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="mimeDT" v_Input="mimeIns" />
       </AdditionalScriptCommands>
       <AdditionalScriptCommands>
-        <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="9b1f36d7-f4fc-4dde-af4b-cf0c22e8ea52" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="mimeDT" v_FilePath="C:\Users\sripa\Desktop\gdrive_bot.xlsx" v_SheetName="Sheet2" />
+        <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="9b1f36d7-f4fc-4dde-af4b-cf0c22e8ea52" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="mimeDT" v_FilePath="[masterExcelPath]" v_SheetName="Sheet2" />
       </AdditionalScriptCommands>
       <AdditionalScriptCommands>
         <ScriptCommand xsi:type="BeginIfCommand" CommandID="07081cf6-6636-4b98-9d4a-c50301cf3e75" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
