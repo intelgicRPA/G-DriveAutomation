@@ -1,0 +1,1368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="1bbc7d76-5d6e-4be3-85c6-afe6a47406b7" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vClientID" v_Input="119563594647-2p3th54f07gn33ba1n6mlaae64i8mji4.apps.googleusercontent.com" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="6d4e3d47-906f-4aea-a4e1-47db41139ce2" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vClientSecret" v_Input="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" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="5b411be4-0251-4176-832a-569dc23ea29c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRefreshToken" v_Input="1//04YQ7NZTtC4DsCgYIARAAGAQSNwF-L9Ir1zLTIx0tmiVEODj7Jgml1KS-hD51IZoj_LeuMAYSYbWxXe9WHisjpyqqjA5Gi7gY77Y" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="2f90d1aa-e50a-448a-a25f-dfa71e502da3" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="masterExcelPath" v_Input="C:\Intelgic\master.xlsx" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="671f50ea-2258-4170-8d63-cac1a7db6187" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vGrantType" v_Input="refresh_token" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="26b4275f-cf82-4dd6-9d53-3fbfd0909b3e" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRedirect" v_Input="https://intelgic.com" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="9493de1e-4a67-4a8e-b236-bd01ef99eabc" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vScope" v_Input="https://www.googleapis.com/auth/drive" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="efd835f8-8478-4e2c-be92-3781c07fb01b" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" v_Comment="get Access Token -&gt; start" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="8bce7036-3ee6-4184-8cf1-895781781815" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vBody" v_Input="{&#xD;&#xA;&quot;client_id&quot;:&quot;[vClientID]&quot;,&#xD;&#xA;&quot;client_secret&quot;:&quot;[vClientSecret]&quot;,&#xD;&#xA;&quot;refresh_token&quot;:&quot;[vRefreshToken]&quot;,&#xD;&#xA;&quot;grant_type&quot;:&quot;[vGrantType]&quot;&#xD;&#xA;}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="bec053a3-12ce-4aa6-8f31-b539a7654696" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://oauth2.googleapis.com/token" v_APIMethodType="POST" v_userVariableName="vToken" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A2vRESTPara53Table010223.035328">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A2vRESTPara53Table010223.035328" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A2vRESTPara53Table010223.035328" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara53Table010223.035328">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara53Table010223.035328" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara53Table010223.035328" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara53Table010223.035328 diffgr:id="RESTPara53Table010223.0353281" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Type>JSON BODY</Parameter_x0020_Type>
+                <Parameter_x0020_Value>[vBody]</Parameter_x0020_Value>
+              </RESTPara53Table010223.035328>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="eedd529b-f0f1-4aeb-a1a9-866ebfd25b22" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vToken]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="TextExtractorCommand" CommandID="9bb2b2ed-9d59-49c3-bde5-2f4504f1c384" CommandName="TextExtractorCommand" IsCommented="false" SelectionName="Basic Pattern Extraction" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vToken]" v_TextExtractionType="Extract All Between Text" v_applyToVariableName="vAccessToken">
+        <v_TextExtractionTable>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="TexPExPracPorPara47Table010323.014714">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="TexPExPracPorPara47Table010323.014714" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="TexPExPracPorPara47Table010323.014714" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <TexPExPracPorPara47Table010323.014714 diffgr:id="TexPExPracPorPara47Table010323.0147141" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Leading Text</Parameter_x0020_Name>
+                <Parameter_x0020_Value>"access_token": "</Parameter_x0020_Value>
+              </TexPExPracPorPara47Table010323.014714>
+              <TexPExPracPorPara47Table010323.014714 diffgr:id="TexPExPracPorPara47Table010323.0147142" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Trailing Text</Parameter_x0020_Name>
+                <Parameter_x0020_Value>",</Parameter_x0020_Value>
+              </TexPExPracPorPara47Table010323.014714>
+              <TexPExPracPorPara47Table010323.014714 diffgr:id="TexPExPracPorPara47Table010323.0147143" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Skip Past Occurences</Parameter_x0020_Name>
+                <Parameter_x0020_Value>0</Parameter_x0020_Value>
+              </TexPExPracPorPara47Table010323.014714>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_TextExtractionTable>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="5ef4b14a-0ed4-423d-a9d9-5b49ebc16015" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" v_Comment="get Access Token -&gt; end" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="05c3df33-76fa-4bd0-83b1-f5d245858c66" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="masterDT" v_Input="masterIns" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="c1341ae4-e07e-498b-b019-0fc920a95472" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="masterDT" v_FilePath="[masterExcelPath]" v_SheetName="Sheet1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RemoveDataRowCommand" CommandID="590d3a3a-df97-42a2-af7c-0e8dde0bcf75" CommandName="RemoveDataRowCommand" IsCommented="false" SelectionName="Remove Data Rows" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_InputDataTableName="masterDT" v_ColumnName="F1='Name'" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="6468f76d-bcd8-41df-9101-a20461a363ab" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="masterDT" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginExcelDatasetLoopCommand" CommandID="8adc71ba-0758-4933-ae5e-5c850e30e3aa" CommandName="BeginExcelDataSetLoopCommand" IsCommented="false" SelectionName="Loop Data Table" DefaultPause="0" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="masterDT" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="ff280663-ae3b-49b9-938b-6a50200507b1" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="19" PauseBeforeExeucution="false" v_Comment="Items in this section will run within the loop" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="11c1e4cd-48c8-4df5-b083-c9a1da26b907" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="20" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="masterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="F1" v_applyToVariableName="vName" v_SortType="Default" v_SpecifiedRow="N/A" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="c7828288-5a9e-4963-a339-69853f8f0db3" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="21" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="masterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="F2" v_applyToVariableName="vRawPath" v_SortType="Default" v_SpecifiedRow="N/A" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="23198e91-7e2f-4755-b556-b4606ee3983a" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="masterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="F3" v_applyToVariableName="vType" v_SortType="Default" v_SpecifiedRow="N/A" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="VariableCommand" CommandID="0cdd15a1-02b4-4504-8360-6499da8f7a3b" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="23" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vPath" v_Input="[vRawPath]\[vName]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="a7a36030-445b-4b12-a82d-138f5aa98668" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="24" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="mimeDT" v_Input="mimeIns" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ExcelCreateDataSetCommand" CommandID="9b1f36d7-f4fc-4dde-af4b-cf0c22e8ea52" CommandName="ExcelCreateDatasetCommand" IsCommented="false" SelectionName="Create Excel Data Table" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="mimeDT" v_FilePath="C:\Users\sripa\Desktop\gdrive_bot.xlsx" v_SheetName="Sheet2" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="BeginIfCommand" CommandID="07081cf6-6636-4b98-9d4a-c50301cf3e75" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+          <v_IfActionParameterTable>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I6AcPionPara49Table011123.034914" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="I6AcPionPara49Table011123.034914">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Parameter_x0020_Name" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+                          <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <I6AcPionPara49Table011123.034914 diffgr:id="I6AcPionPara49Table011123.0349141" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>[vType]</Parameter_x0020_Value>
+                </I6AcPionPara49Table011123.034914>
+                <I6AcPionPara49Table011123.034914 diffgr:id="I6AcPionPara49Table011123.0349142" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>is not equal to</Parameter_x0020_Value>
+                </I6AcPionPara49Table011123.034914>
+                <I6AcPionPara49Table011123.034914 diffgr:id="I6AcPionPara49Table011123.0349143" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>folder</Parameter_x0020_Value>
+                </I6AcPionPara49Table011123.034914>
+              </DocumentElement>
+            </diffgr:diffgram>
+          </v_IfActionParameterTable>
+        </ScriptCommand>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="73969ee1-8560-4762-8815-de8aab79b6ae" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="27" PauseBeforeExeucution="false" v_Comment="Items in this section will run if the statement is true" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RegExExtractorCommand" CommandID="58b86362-96a7-4433-a47f-18c6537f30e7" CommandName="RegExExtractorCommand" IsCommented="false" SelectionName="RegEx Pattern Extraction" DefaultPause="0" LineNumber="28" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vName]" v_RegExExtractor="\.([A-Za-z0-9]+)$" v_MatchGroupIndex="0" v_applyToVariableName="vExtension" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="f5d1f302-3d2a-4042-a4ec-ed91a6abc31e" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Print" DefaultPause="0" LineNumber="29" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vExtension" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="75804582-ddde-43b2-a874-6e303d758a6f" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="30" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vMimeFilterDT" v_Input="mimeFilterDTIns" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="FilterDataTableCommand" CommandID="3e9b7fd9-925e-4e04-be5a-98df4b27a1b8" CommandName="FilterDataTableCommand" IsCommented="false" SelectionName="Filter Data Table" DefaultPause="0" LineNumber="31" PauseBeforeExeucution="false" CommandEnabled="true" v_DataTableName="mimeDT" v_LogicalOperator="AND" v_DataTabNameOutput="masterMimeFilterDT">
+            <v_Conditions>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="Para57Table011023.065704">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ColumnNameOne" type="xs:string" minOccurs="0" />
+                      <xs:element name="Operator" type="xs:string" minOccurs="0" />
+                      <xs:element name="ColumnNameTwo" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Para57Table011023.065704" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="Para57Table011023.065704" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <Para57Table011023.065704 diffgr:id="Para57Table011023.0657041" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <ColumnNameOne>F1</ColumnNameOne>
+                    <Operator>=</Operator>
+                    <ColumnNameTwo>[vExtension]</ColumnNameTwo>
+                  </Para57Table011023.065704>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_Conditions>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="TryCommand" CommandID="0fc21636-d66d-43c5-b79e-d58c4e42f6f0" CommandName="TryCommand" IsCommented="false" SelectionName="Try" DefaultPause="0" LineNumber="32" PauseBeforeExeucution="false" CommandEnabled="true" />
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="dd117d6f-df3f-4551-9aee-e6c49aca91b6" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="33" PauseBeforeExeucution="false" v_Comment="Items in this section will be handled if error occurs" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="e5f34741-6df4-40af-b015-354b6c921561" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="34" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="masterMimeFilterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="F2" v_applyToVariableName="vMimeType" v_SortType="Default" v_SpecifiedRow="N/A" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CatchExceptionCommand" CommandID="050dce86-e525-4361-aedf-f837b80df996" CommandName="CatchExceptionCommand" IsCommented="false" SelectionName="Catch Exception" DefaultPause="0" LineNumber="35" PauseBeforeExeucution="false" v_Comment="Items in this section will run if error occurs" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="d73e630c-ce32-471e-8c41-eccdf011adc9" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="36" PauseBeforeExeucution="false" v_Comment="This section executes if error occurs above" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="EndTryCommand" CommandID="9a1f7f72-b1dc-4375-9a5a-f0d7e349ec6d" CommandName="EndTryCommand" IsCommented="false" SelectionName="End Try" DefaultPause="0" LineNumber="37" PauseBeforeExeucution="false" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ElseCommand" CommandID="ea3feec3-54bc-4eff-ab05-e36a1f3ca142" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="38" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="VariableCommand" CommandID="e64f5b7f-252c-41f8-8a48-2634ff826a7e" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="39" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vMimeType" v_Input="application/vnd.google-apps.folder" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="EndIfCommand" CommandID="b7f225b3-be69-43f2-ab95-07c9a18d48e1" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="40" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="c65c0e07-d3fe-4910-9d85-d47129923920" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="41" PauseBeforeExeucution="false" v_Comment="Checking if we are uploading Folder or File" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="BeginIfCommand" CommandID="00c66fb8-aff7-45b5-8812-27a8363b6d3d" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="42" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Value">
+          <v_IfActionParameterTable>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="I0AcPionPara39Table011023.043938">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Parameter_x0020_Name" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+                    <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I0AcPionPara39Table011023.043938" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="I0AcPionPara39Table011023.043938" />
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <I0AcPionPara39Table011023.043938 diffgr:id="I0AcPionPara39Table011023.0439381" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>[vMimeType]</Parameter_x0020_Value>
+                </I0AcPionPara39Table011023.043938>
+                <I0AcPionPara39Table011023.043938 diffgr:id="I0AcPionPara39Table011023.0439382" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>is equal to</Parameter_x0020_Value>
+                </I0AcPionPara39Table011023.043938>
+                <I0AcPionPara39Table011023.043938 diffgr:id="I0AcPionPara39Table011023.0439383" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                  <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                  <Parameter_x0020_Value>application/vnd.google-apps.folder</Parameter_x0020_Value>
+                </I0AcPionPara39Table011023.043938>
+              </DocumentElement>
+            </diffgr:diffgram>
+          </v_IfActionParameterTable>
+        </ScriptCommand>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="d048f24b-ca4d-4375-b5b2-e20040f9bcd5" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="43" PauseBeforeExeucution="false" v_Comment="For folder" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="5676ac44-1323-4fe4-a74d-2adb163f59c2" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="44" PauseBeforeExeucution="false" v_Comment="List of all files in drive with File ID -&gt; start" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RESTCommand" CommandID="66c197e3-59b3-4906-86b3-ca4b3744a4e6" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="45" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files" v_APIMethodType="GET" v_userVariableName="vListResponse" v_RequestFormat="Json">
+            <v_AdvancedParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="A3vRESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="A3vRESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </v_AdvancedParameters>
+            <v_RESTParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="RESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="RESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_RESTParameters>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="8107d8de-b919-40c3-b16c-d1859959ac4a" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="46" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vListResponse]" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseJsonModelCommand" CommandID="61c78737-ef52-400f-9166-078e83ba42b1" CommandName="ParseJsonModelCommand" IsCommented="false" SelectionName="Read Json Model" DefaultPause="0" LineNumber="47" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vListResponse]">
+            <v_ParseObjects>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="ParseJsonObjectsTable010923052825">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Json_x0020_Selector" type="xs:string" minOccurs="0" />
+                      <xs:element name="Output_x0020_Variable" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ParseJsonObjectsTable010923052825" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="ParseJsonObjectsTable010923052825" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <ParseJsonObjectsTable010923052825 diffgr:id="ParseJsonObjectsTable0109230528251" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Json_x0020_Selector>files</Json_x0020_Selector>
+                    <Output_x0020_Variable>vFiles</Output_x0020_Variable>
+                  </ParseJsonObjectsTable010923052825>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_ParseObjects>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="fd9a48ee-967d-4b6d-b28c-aa5b74bcf2e3" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="48" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vFilesDT" v_Input="vFilesIns" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="JsonToDataTableCommand" CommandID="0c9c007c-141b-4057-905a-47b24b5befb1" CommandName="JsonToDataTableCommand" IsCommented="false" SelectionName="Convert Json To Data Table" DefaultPause="0" LineNumber="49" PauseBeforeExeucution="false" CommandEnabled="true" v_Data="[vFiles]" v_DataTabNameOutput="vFilesDT" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="7a170b8e-0d66-4ed3-a862-ad77bf9ae347" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="50" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vFilesDT" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="56bc6e72-eaec-4b27-8cc3-6994c47931ee" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="51" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vFilterDT" v_Input="vFilterIns" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="FilterDataTableCommand" CommandID="4678bbb2-06af-4e98-b048-bf2772c1e58d" CommandName="FilterDataTableCommand" IsCommented="false" SelectionName="Filter Data Table" DefaultPause="0" LineNumber="52" PauseBeforeExeucution="false" CommandEnabled="true" v_DataTableName="vFilesDT" v_LogicalOperator="AND" v_DataTabNameOutput="vFilterDT">
+            <v_Conditions>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="Para25Table010923.052508">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ColumnNameOne" type="xs:string" minOccurs="0" />
+                      <xs:element name="Operator" type="xs:string" minOccurs="0" />
+                      <xs:element name="ColumnNameTwo" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Para25Table010923.052508" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="Para25Table010923.052508" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <Para25Table010923.052508 diffgr:id="Para25Table010923.0525081" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <ColumnNameOne>mimeType</ColumnNameOne>
+                    <Operator>=</Operator>
+                    <ColumnNameTwo>application/vnd.google-apps.folder</ColumnNameTwo>
+                  </Para25Table010923.052508>
+                  <Para25Table010923.052508 diffgr:id="Para25Table010923.0525082" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                    <ColumnNameOne>name</ColumnNameOne>
+                    <Operator>=</Operator>
+                    <ColumnNameTwo>[vName]</ColumnNameTwo>
+                  </Para25Table010923.052508>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_Conditions>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="TryCommand" CommandID="4f20d810-bbe8-4926-9039-809d82f521fc" CommandName="TryCommand" IsCommented="false" SelectionName="Try" DefaultPause="0" LineNumber="53" PauseBeforeExeucution="false" CommandEnabled="true" />
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="5cdbb9e5-7824-42d3-a989-cfba2e1655fa" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="54" PauseBeforeExeucution="false" v_Comment="Items in this section will be handled if error occurs" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="8cdc0f1d-5273-4a33-8e26-49a6d7866720" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="55" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="vFilterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="id" v_applyToVariableName="vFolderID" v_SortType="Default" v_SpecifiedRow="N/A" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CatchExceptionCommand" CommandID="f2ed6849-e731-403f-b8a0-f1eb0c293682" CommandName="CatchExceptionCommand" IsCommented="false" SelectionName="Catch Exception" DefaultPause="0" LineNumber="56" PauseBeforeExeucution="false" v_Comment="Items in this section will run if error occurs" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="17bd88ca-18e6-4aca-8761-90d4fdd46ede" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="57" PauseBeforeExeucution="false" v_Comment="Create folder in drive -&gt; start" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="c255a67c-939f-4564-8e27-c76579ea0294" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="58" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vFolderBody" v_Input="{&#xD;&#xA;  &quot;name&quot;: &quot;[vName]&quot;,&#xD;&#xA;&quot;mimeType&quot;:&quot;application/vnd.google-apps.folder&quot;&#xD;&#xA;}" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RESTCommand" CommandID="9e05d6a2-301c-4d20-b7ce-5df9394750ad" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="59" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files" v_APIMethodType="POST" v_userVariableName="vCreateFolderResponse" v_RequestFormat="None">
+              <v_AdvancedParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="A3vRESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="A3vRESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_AdvancedParameters>
+              <v_RESTParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="RESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="RESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142192" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>JSON BODY</Parameter_x0020_Type>
+                      <Parameter_x0020_Value>[vFolderBody]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_RESTParameters>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="60a2edea-543e-45b2-9674-5038ed2566ad" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Print" DefaultPause="0" LineNumber="60" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vCreateFolderResponse]" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseJsonModelCommand" CommandID="f4e9260d-25e8-44b3-80ed-8363992832a2" CommandName="ParseJsonModelCommand" IsCommented="false" SelectionName="Read Json Model" DefaultPause="0" LineNumber="61" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vCreateFolderResponse]">
+              <v_ParseObjects>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="ParseJsonObjectsTable010923052825">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Json_x0020_Selector" type="xs:string" minOccurs="0" />
+                        <xs:element name="Output_x0020_Variable" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ParseJsonObjectsTable010923052825" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="ParseJsonObjectsTable010923052825" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <ParseJsonObjectsTable010923052825 diffgr:id="ParseJsonObjectsTable0109230528251" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Json_x0020_Selector>id</Json_x0020_Selector>
+                      <Output_x0020_Variable>vFolderID</Output_x0020_Variable>
+                    </ParseJsonObjectsTable010923052825>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_ParseObjects>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="8b0e1d26-cc87-4b83-aaac-e8e3edcf2379" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="62" PauseBeforeExeucution="false" v_Comment="Create folder in drive -&gt; end" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="EndTryCommand" CommandID="87619923-1e10-4fba-b7c3-d364dc94ed40" CommandName="EndTryCommand" IsCommented="false" SelectionName="End Try" DefaultPause="0" LineNumber="63" PauseBeforeExeucution="false" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="6ff13574-b8bd-4028-ac99-85f31c25d730" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="64" PauseBeforeExeucution="false" v_Comment="List of all files in drive with File ID -&gt; end" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="d5015900-43f7-44c9-bd67-1cb47c3205a1" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="65" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vFolderDT" v_Input="vFolderIns" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ReadFolderCommand" CommandID="03d548b8-880a-46a6-a746-de0a31a53b20" CommandName="ReadFolderCommand" IsCommented="false" SelectionName="Read Folder" DefaultPause="0" LineNumber="66" PauseBeforeExeucution="false" CommandEnabled="true" v_SourceFilePath="[vPath]" v_ApplyToUserVariable="vFolderDT" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="05e97858-6072-48de-a7ec-682bb16ad0c8" CommandName="PreviewDataTableCommand" IsCommented="false" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="67" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vFolderDT" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="adc1e5d7-b19a-4613-bdef-ba1cbf1551eb" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="68" PauseBeforeExeucution="false" v_Comment="Loop for files within the folder" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="BeginExcelDatasetLoopCommand" CommandID="fd164cf8-03a4-4cc3-9290-be497ca72bc7" CommandName="BeginExcelDataSetLoopCommand" IsCommented="false" SelectionName="Loop Data Table" DefaultPause="0" LineNumber="69" PauseBeforeExeucution="false" CommandEnabled="true" v_DataSetName="vFolderDT" />
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="0d4eb518-c75b-4c3b-978c-4ca055b87f82" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="70" PauseBeforeExeucution="false" v_Comment="Items in this section will run within the loop" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="e46a8bbd-6f63-4a40-9f6e-9a1ac9149d7d" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="71" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="vFolderDT" v_ColumnParseType="By Column Name" v_ColumnParameter="FileName" v_applyToVariableName="vFilesName" v_SortType="Default" v_SpecifiedRow="N/A" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="TextExtractorCommand" CommandID="641d3a09-4887-4519-983c-7945d073fda4" CommandName="TextExtractorCommand" IsCommented="true" SelectionName="Basic Pattern Extraction" DefaultPause="0" LineNumber="72" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vFilesName]" v_TextExtractionType="Extract All After Text" v_applyToVariableName="vExtension">
+              <v_TextExtractionTable>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="TexPExPracPorPara52Table011023.065212" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="TexPExPracPorPara52Table011023.065212">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                              <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <TexPExPracPorPara52Table011023.065212 diffgr:id="TexPExPracPorPara52Table011023.0652121" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Leading Text</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>.</Parameter_x0020_Value>
+                    </TexPExPracPorPara52Table011023.065212>
+                    <TexPExPracPorPara52Table011023.065212 diffgr:id="TexPExPracPorPara52Table011023.0652122" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Name>Skip Past Occurences</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>0</Parameter_x0020_Value>
+                    </TexPExPracPorPara52Table011023.065212>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_TextExtractionTable>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RegExExtractorCommand" CommandID="b811227c-6fc6-4f67-a6b0-491d2efe2f19" CommandName="RegExExtractorCommand" IsCommented="false" SelectionName="RegEx Pattern Extraction" DefaultPause="0" LineNumber="73" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vFilesName]" v_RegExExtractor="\.([A-Za-z0-9]+)$" v_MatchGroupIndex="0" v_applyToVariableName="vExtension" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="f721b350-909e-442c-b8e1-2431809cd69a" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="74" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vExtension" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="3589ebee-a62b-4cd9-91ae-a361707121bb" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="75" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vMimeFilterDT" v_Input="mimeFilterDTIns" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="FilterDataTableCommand" CommandID="111db217-de0f-44be-98c8-3f4327ba66e6" CommandName="FilterDataTableCommand" IsCommented="false" SelectionName="Filter Data Table" DefaultPause="0" LineNumber="76" PauseBeforeExeucution="false" CommandEnabled="true" v_DataTableName="mimeDT" v_LogicalOperator="AND" v_DataTabNameOutput="vMimeFilterDT">
+              <v_Conditions>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Para57Table011023.065704" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="Para57Table011023.065704">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="ColumnNameOne" type="xs:string" minOccurs="0" />
+                              <xs:element name="Operator" type="xs:string" minOccurs="0" />
+                              <xs:element name="ColumnNameTwo" type="xs:string" minOccurs="0" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <Para57Table011023.065704 diffgr:id="Para57Table011023.0657041" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <ColumnNameOne>F1</ColumnNameOne>
+                      <Operator>=</Operator>
+                      <ColumnNameTwo>[vExtension]</ColumnNameTwo>
+                    </Para57Table011023.065704>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_Conditions>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="TryCommand" CommandID="f6b91749-3a38-47f7-b7bb-aff830d80d17" CommandName="TryCommand" IsCommented="false" SelectionName="Try" DefaultPause="0" LineNumber="77" PauseBeforeExeucution="false" CommandEnabled="true" />
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="bad818ad-55b7-4857-a1e3-8046ff5daaff" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="78" PauseBeforeExeucution="false" v_Comment="Items in this section will be handled if error occurs" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="ParseDatasetRowCommand" CommandID="470f436d-aa4e-46b3-b586-def4af25eb8d" CommandName="ParseRowCommand" IsCommented="false" SelectionName="Read Table" DefaultPause="0" LineNumber="79" PauseBeforeExeucution="false" CommandEnabled="true" v_DatasetName="vMimeFilterDT" v_ColumnParseType="By Column Name" v_ColumnParameter="F2" v_applyToVariableName="vMimeType" v_SortType="Default" v_SpecifiedRow="N/A" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CatchExceptionCommand" CommandID="1153eb20-fea6-490b-8908-dd562943040f" CommandName="CatchExceptionCommand" IsCommented="false" SelectionName="Catch Exception" DefaultPause="0" LineNumber="80" PauseBeforeExeucution="false" v_Comment="Items in this section will run if error occurs" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="CommentCommand" CommandID="24959c7d-23ca-4f57-8802-acf4d007aafb" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="81" PauseBeforeExeucution="false" v_Comment="This section executes if error occurs above" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+            <AdditionalScriptCommands>
+              <ScriptCommand xsi:type="EndTryCommand" CommandID="efac29a6-20f9-4d79-a99f-58d02bb72100" CommandName="EndTryCommand" IsCommented="false" SelectionName="End Try" DefaultPause="0" LineNumber="82" PauseBeforeExeucution="false" CommandEnabled="true" />
+            </AdditionalScriptCommands>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="WriteTextFileCommand" CommandID="c5030689-d03b-47e8-8839-d8f8cff57501" CommandName="WriteTextFileCommand" IsCommented="false" SelectionName="Write Text File" DefaultPause="0" LineNumber="83" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="C:\Users\sripa\Desktop\Notes\request.json" v_TextToWrite="{&#xD;&#xA;&quot;name&quot;:&quot;[vFilesName]&quot;,&#xD;&#xA;&quot;mimeType&quot;:&quot;[vMimeType]&quot;&#xD;&#xA;}" v_Overwrite="Overwrite" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="47a7745c-26db-4475-8a20-0e8074b83e69" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="84" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="request_json" v_Input="C:\Users\sripa\Desktop\Notes\request.json" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="2b7c35fd-3582-4e02-a1ff-ccecdda10c40" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="85" PauseBeforeExeucution="false" v_Comment="Upload to drive and rename-&gt; start" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RESTCommand" CommandID="2007de75-1114-4d42-8af3-26b83e08a721" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="86" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/upload/drive/v3/files" v_APIMethodType="POST" v_userVariableName="vUploadResponse" v_RequestFormat="None">
+              <v_AdvancedParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="A3vRESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="A3vRESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_AdvancedParameters>
+              <v_RESTParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="RESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="RESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Content-Type</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>multipart/form-data</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142192" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142193" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>FILE</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>file1</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[vPath]/[vFilesName]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142194" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>FILE</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>file2</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>[request_json]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_RESTParameters>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="d6dde1cb-5021-40ed-8991-d3916cd74d3b" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="87" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vUploadResponse]" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="ParseJsonModelCommand" CommandID="d55e65bc-05c9-4430-a8f0-60dec32c0285" CommandName="ParseJsonModelCommand" IsCommented="false" SelectionName="Read Json Model" DefaultPause="0" LineNumber="88" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vUploadResponse]">
+              <v_ParseObjects>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="ParseJsonObjectsTable010623030724">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Json_x0020_Selector" type="xs:string" minOccurs="0" />
+                        <xs:element name="Output_x0020_Variable" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ParseJsonObjectsTable010623030724" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="ParseJsonObjectsTable010623030724" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <ParseJsonObjectsTable010623030724 diffgr:id="ParseJsonObjectsTable0106230307241" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Json_x0020_Selector>id</Json_x0020_Selector>
+                      <Output_x0020_Variable>vID</Output_x0020_Variable>
+                    </ParseJsonObjectsTable010623030724>
+                    <ParseJsonObjectsTable010623030724 diffgr:id="ParseJsonObjectsTable0106230307242" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Json_x0020_Selector>mimeType</Json_x0020_Selector>
+                      <Output_x0020_Variable>vMIME</Output_x0020_Variable>
+                    </ParseJsonObjectsTable010623030724>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_ParseObjects>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="b6685ea8-1b20-49b7-b9f5-9d0c38d8ee00" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="89" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRenameBody" v_Input="{&#xD;&#xA;  &quot;name&quot;: &quot;[vFilesName]&quot;,&#xD;&#xA;&quot;mimeType&quot;:&quot;[vMIME]&quot;&#xD;&#xA;}" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RESTCommand" CommandID="0f987362-1bd7-48af-b88e-6d8f87068923" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="90" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]" v_APIMethodType="PATCH" v_userVariableName="vRenameResponse" v_RequestFormat="Json">
+              <v_AdvancedParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="A3vRESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="A3vRESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_AdvancedParameters>
+              <v_RESTParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="RESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="RESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142192" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>JSON BODY</Parameter_x0020_Type>
+                      <Parameter_x0020_Value>[vRenameBody]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_RESTParameters>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="VariableCommand" CommandID="96da938b-1f50-4ca0-b088-fb79de2f30b7" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="91" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vMoveBody" v_Input="{&#xD;&#xA;  &quot;name&quot;: &quot;[vFileName]&quot;,&#xD;&#xA;&quot;parents&quot;:&quot;1efTh6yDhNzLmtvbYSoPuC7RceqQ4D33t&quot;&#xD;&#xA;}" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RESTCommand" CommandID="c10ffe53-7a51-4893-93b0-d593f7fb3a79" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="92" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]?addParents=[vFolderID]" v_APIMethodType="PATCH" v_userVariableName="vAddFolderResponse" v_RequestFormat="None">
+              <v_AdvancedParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="A3vRESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="A3vRESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_AdvancedParameters>
+              <v_RESTParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="RESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="RESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_RESTParameters>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="MessageBoxCommand" CommandID="39ba1d80-3a2b-42fd-8137-a8278fdc175a" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Print" DefaultPause="0" LineNumber="93" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vAddFolderResponse]" v_AutoCloseAfter="0" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="RESTCommand" CommandID="3b3f5ccc-3ea9-4e59-836c-73addd3b4ade" CommandName="RESTCommand" IsCommented="true" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="94" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]" v_APIMethodType="DELETE" v_userVariableName="vRenameResponse" v_RequestFormat="Json">
+              <v_AdvancedParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="A3vRESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                        <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="A3vRESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+              </v_AdvancedParameters>
+              <v_RESTParameters>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                  <xs:element name="RESTPara42Table010323.014219">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                    <xs:complexType>
+                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="RESTPara42Table010323.014219" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                  <DocumentElement>
+                    <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                      <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                      <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                      <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                    </RESTPara42Table010323.014219>
+                  </DocumentElement>
+                </diffgr:diffgram>
+              </v_RESTParameters>
+            </ScriptCommand>
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="CommentCommand" CommandID="5ea95bb2-5d36-4586-a999-9ceefbf2fe09" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="95" PauseBeforeExeucution="false" v_Comment="Upload to drive and rename-&gt; end" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+          <AdditionalScriptCommands>
+            <ScriptCommand xsi:type="EndLoopCommand" CommandID="f938315d-bd9c-42bf-b5a9-5d92bab76aec" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="96" PauseBeforeExeucution="false" CommandEnabled="true" />
+          </AdditionalScriptCommands>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ElseCommand" CommandID="b8fe0921-1bdf-4cae-9cac-cbf84d9a2036" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="97" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="281f4609-eb20-4d63-b48b-fcd31b9a5c8b" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="98" PauseBeforeExeucution="false" v_Comment="For single file" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="WriteTextFileCommand" CommandID="80bc813c-ebc2-4e15-a89a-c56314277771" CommandName="WriteTextFileCommand" IsCommented="false" SelectionName="Write Text File" DefaultPause="0" LineNumber="99" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="C:\Users\sripa\Desktop\Notes\request.json" v_TextToWrite="{&#xD;&#xA;&quot;name&quot;:&quot;[vName]&quot;,&#xD;&#xA;&quot;mimeType&quot;:&quot;[vMimeType]&quot;&#xD;&#xA;}" v_Overwrite="Overwrite" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="VariableCommand" CommandID="352ecb68-a5e8-4c23-805c-760980626972" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="100" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="request_json" v_Input="C:\Users\sripa\Desktop\Notes\request.json" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="535c19c2-594f-4690-80d9-18f4c196e1d9" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="101" PauseBeforeExeucution="false" v_Comment="Upload to drive and rename-&gt; start" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RESTCommand" CommandID="929dc805-5dc0-4b7c-a1d8-6c6e6d5def6d" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="102" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/upload/drive/v3/files" v_APIMethodType="POST" v_userVariableName="vUploadResponse" v_RequestFormat="None">
+            <v_AdvancedParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="A3vRESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="A3vRESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </v_AdvancedParameters>
+            <v_RESTParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="RESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="RESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Content-Type</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>multipart/form-data</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142192" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142193" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>FILE</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>file1</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>[vPath]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142194" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>FILE</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>file2</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>[request_json]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_RESTParameters>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="a5227dcf-9a67-415e-b0d2-6e9baa4517d4" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="103" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vUploadResponse]" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="ParseJsonModelCommand" CommandID="a06be821-cb44-43cd-937d-432a61eeca07" CommandName="ParseJsonModelCommand" IsCommented="false" SelectionName="Read Json Model" DefaultPause="0" LineNumber="104" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vUploadResponse]">
+            <v_ParseObjects>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="ParseJsonObjectsTable010623030724">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Json_x0020_Selector" type="xs:string" minOccurs="0" />
+                      <xs:element name="Output_x0020_Variable" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ParseJsonObjectsTable010623030724" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="ParseJsonObjectsTable010623030724" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <ParseJsonObjectsTable010623030724 diffgr:id="ParseJsonObjectsTable0106230307241" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Json_x0020_Selector>id</Json_x0020_Selector>
+                    <Output_x0020_Variable>vID</Output_x0020_Variable>
+                  </ParseJsonObjectsTable010623030724>
+                  <ParseJsonObjectsTable010623030724 diffgr:id="ParseJsonObjectsTable0106230307242" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                    <Json_x0020_Selector>mimeType</Json_x0020_Selector>
+                    <Output_x0020_Variable>vMIME</Output_x0020_Variable>
+                  </ParseJsonObjectsTable010623030724>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_ParseObjects>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="VariableCommand" CommandID="687e6a79-0317-4f10-99b0-c98c6bad2b68" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="105" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vRenameBody" v_Input="{&#xD;&#xA;  &quot;name&quot;: &quot;[vName]&quot;,&#xD;&#xA;&quot;mimeType&quot;:&quot;[vMIME]&quot;&#xD;&#xA;}" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RESTCommand" CommandID="75251643-eb9b-4de1-b8ea-112e746fb5a2" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="106" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]" v_APIMethodType="PATCH" v_userVariableName="vRenameResponse" v_RequestFormat="Json">
+            <v_AdvancedParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="A3vRESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="A3vRESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </v_AdvancedParameters>
+            <v_RESTParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="RESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="RESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142192" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>JSON BODY</Parameter_x0020_Type>
+                    <Parameter_x0020_Value>[vRenameBody]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_RESTParameters>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="VariableCommand" CommandID="f6f55261-7a8e-4666-bd35-978a9ba347fb" CommandName="VariableCommand" IsCommented="true" SelectionName="Set Variable" DefaultPause="0" LineNumber="107" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vMoveBody" v_Input="{&#xD;&#xA;  &quot;name&quot;: &quot;[vFileName]&quot;,&#xD;&#xA;&quot;parents&quot;:&quot;1efTh6yDhNzLmtvbYSoPuC7RceqQ4D33t&quot;&#xD;&#xA;}" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RESTCommand" CommandID="740dd06f-8b17-4801-aba5-7bd5dc115bae" CommandName="RESTCommand" IsCommented="false" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="108" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]?addParents=1efTh6yDhNzLmtvbYSoPuC7RceqQ4D33t" v_APIMethodType="PATCH" v_userVariableName="vAddFolderResponse" v_RequestFormat="None">
+            <v_AdvancedParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="A3vRESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="A3vRESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </v_AdvancedParameters>
+            <v_RESTParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="RESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="RESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_RESTParameters>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="dbc95973-a5da-4ddb-9477-82af8755e07b" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Print" DefaultPause="0" LineNumber="109" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vAddFolderResponse]" v_AutoCloseAfter="0" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="RESTCommand" CommandID="051154cd-8193-414f-b17d-4bf6e8ff29ad" CommandName="RESTCommand" IsCommented="true" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="110" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/[vID]" v_APIMethodType="DELETE" v_userVariableName="vRenameResponse" v_RequestFormat="Json">
+            <v_AdvancedParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="A3vRESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="A3vRESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </v_AdvancedParameters>
+            <v_RESTParameters>
+              <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                <xs:element name="RESTPara42Table010323.014219">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+                  <xs:complexType>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element ref="RESTPara42Table010323.014219" />
+                    </xs:choice>
+                  </xs:complexType>
+                </xs:element>
+              </xs:schema>
+              <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                <DocumentElement>
+                  <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                    <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                    <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                    <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+                  </RESTPara42Table010323.014219>
+                </DocumentElement>
+              </diffgr:diffgram>
+            </v_RESTParameters>
+          </ScriptCommand>
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="CommentCommand" CommandID="1ffd70a9-3dc7-461b-bf7e-2b28403a7212" CommandName="CommentCommand" IsCommented="false" SelectionName="Comment Line" DefaultPause="0" LineNumber="111" PauseBeforeExeucution="false" v_Comment="Upload to drive and rename-&gt; end" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+        <AdditionalScriptCommands>
+          <ScriptCommand xsi:type="EndIfCommand" CommandID="7d82d61b-1f6d-49bc-a24a-cf05c5b02229" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="112" PauseBeforeExeucution="false" CommandEnabled="true" />
+        </AdditionalScriptCommands>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="903cd9a9-c258-44b7-ba19-7728c23f1af3" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="113" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RESTCommand" CommandID="bf53d216-5780-4f35-8c92-2f1c031adfc0" CommandName="RESTCommand" IsCommented="true" SelectionName="Rest API Integration" DefaultPause="0" LineNumber="114" PauseBeforeExeucution="false" CommandEnabled="true" v_BaseURL="https://www.googleapis.com/drive/v3/files/1I6dlPb7Q0ao8bWnYposMJ3zNagJix46g?alt=media" v_APIMethodType="GET" v_userVariableName="vDownloadResponse" v_RequestFormat="Json">
+        <v_AdvancedParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="A3vRESTPara42Table010323.014219">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Content_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="A3vRESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="A3vRESTPara42Table010323.014219" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+        </v_AdvancedParameters>
+        <v_RESTParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="RESTPara42Table010323.014219">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RESTPara42Table010323.014219" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="RESTPara42Table010323.014219" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <RESTPara42Table010323.014219 diffgr:id="RESTPara42Table010323.0142191" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Type>HEADER</Parameter_x0020_Type>
+                <Parameter_x0020_Name>Authorization</Parameter_x0020_Name>
+                <Parameter_x0020_Value>Bearer [vAccessToken]</Parameter_x0020_Value>
+              </RESTPara42Table010323.014219>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_RESTParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="0391d02a-c4b0-4429-9a02-dbdfde4fd559" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="115" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vDownloadResponse]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>
