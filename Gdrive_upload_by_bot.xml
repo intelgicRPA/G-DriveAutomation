@@ -375,7 +375,7 @@
           </ScriptCommand>
         </AdditionalScriptCommands>
         <AdditionalScriptCommands>
-          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="8107d8de-b919-40c3-b16c-d1859959ac4a" CommandName="MessageBoxCommand" IsCommented="true" SelectionName="Print" DefaultPause="0" LineNumber="46" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vListResponse]" v_AutoCloseAfter="0" />
+          <ScriptCommand xsi:type="MessageBoxCommand" CommandID="8107d8de-b919-40c3-b16c-d1859959ac4a" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Print" DefaultPause="0" LineNumber="46" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vListResponse]" v_AutoCloseAfter="0" />
         </AdditionalScriptCommands>
         <AdditionalScriptCommands>
           <ScriptCommand xsi:type="ParseJsonModelCommand" CommandID="61c78737-ef52-400f-9166-078e83ba42b1" CommandName="ParseJsonModelCommand" IsCommented="false" SelectionName="Read Json Model" DefaultPause="0" LineNumber="47" PauseBeforeExeucution="false" CommandEnabled="true" v_InputValue="[vListResponse]">
@@ -415,7 +415,7 @@
           <ScriptCommand xsi:type="JsonToDataTableCommand" CommandID="0c9c007c-141b-4057-905a-47b24b5befb1" CommandName="JsonToDataTableCommand" IsCommented="false" SelectionName="Convert Json To Data Table" DefaultPause="0" LineNumber="49" PauseBeforeExeucution="false" CommandEnabled="true" v_Data="[vFiles]" v_DataTabNameOutput="vFilesDT" />
         </AdditionalScriptCommands>
         <AdditionalScriptCommands>
-          <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="7a170b8e-0d66-4ed3-a862-ad77bf9ae347" CommandName="PreviewDataTableCommand" IsCommented="true" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="50" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vFilesDT" v_AutoCloseAfter="0" />
+          <ScriptCommand xsi:type="PreviewDataTableCommand" CommandID="7a170b8e-0d66-4ed3-a862-ad77bf9ae347" CommandName="PreviewDataTableCommand" IsCommented="false" SelectionName="Preview Data Table" DefaultPause="0" LineNumber="50" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vFilesDT" v_AutoCloseAfter="0" />
         </AdditionalScriptCommands>
         <AdditionalScriptCommands>
           <ScriptCommand xsi:type="DataTableInstanceCommand" CommandID="56bc6e72-eaec-4b27-8cc3-6994c47931ee" CommandName="DataTableInstanceCommand" IsCommented="false" SelectionName="Assign Data Table Instance" DefaultPause="0" LineNumber="51" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vFilterDT" v_Input="vFilterIns" />
